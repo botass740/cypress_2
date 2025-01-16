@@ -16,6 +16,7 @@ describe('template spec', () => {
     cy.get('.buying-scheme :nth-child(5) > :nth-child(6)').click();
     cy.get('.buying-scheme :nth-child(3) > :nth-child(7)').click();
     cy.get('.buying-scheme :nth-child(5) > :nth-child(8)').click();*/
+    
     cy.contains('Забронировать').should('not.be.disabled').click();
     cy.contains('Получить код бронирования')
     .should('be.visible')
